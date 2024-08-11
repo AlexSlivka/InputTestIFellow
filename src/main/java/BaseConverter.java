@@ -25,7 +25,7 @@ public class BaseConverter {
                 System.out.println("Конвертация не удалась. Выбор шкалы некорректен.");
         }
 
-        System.out.println(result + "  " + scale);
+        System.out.println("Результат = " + result + "  " + scale);
 
         reader.close();
     }

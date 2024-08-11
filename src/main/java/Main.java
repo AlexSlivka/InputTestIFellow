@@ -3,8 +3,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("IFellow");
-
         System.out.println("Задача 1");
         createRandomArray(11);
 
@@ -21,6 +19,10 @@ public class Main {
 
         System.out.println("+===========+");
 
+        System.out.println("Задача 4");
+        calculateAngleOfTime(3, 45);
+
+        System.out.println("+===========+");
     }
 
     static void createRandomArray(int sizeArray) {
@@ -76,8 +78,11 @@ public class Main {
             }
         }
         System.out.println("Самый повторяющийся символ в слове " + inputWord + " это " + frequentSymbol);
+    }
 
-
+    static void calculateAngleOfTime(int hours, int minutes) {
+        double angle = hours * 30 + minutes * ((double) 30 / 60) - minutes * 6;
+        System.out.println("Угол между " + hours + " часами и " + minutes + " минутами = " + angle);
     }
 }
 
