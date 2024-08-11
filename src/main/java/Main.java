@@ -87,6 +87,7 @@ public class Main {
         } else {
             angle = hours * 30 + minutes * ((double) 30 / 60) - minutes * 6;
         }
+
         System.out.println("Угол между " + hours + " часами и " + minutes + " минутами = " + angle);
     }
 }
