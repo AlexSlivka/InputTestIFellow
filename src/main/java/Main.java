@@ -1,7 +1,8 @@
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("IFellow");
 
         System.out.println("Задача 1");
@@ -11,6 +12,11 @@ public class Main {
 
         System.out.println("Задача 2");
         findFrequentSymbol("Hello");
+
+        System.out.println("+===========+");
+
+        System.out.println("Задача 3");
+        BaseConverter.convert();
 
         System.out.println("+===========+");
 
@@ -51,7 +57,6 @@ public class Main {
     }
 
     static void findFrequentSymbol(String inputWord) {
-        System.out.println(inputWord);
         Map<Character, Integer> symbolMap = new HashMap<>();
         for (char symbol : inputWord.toCharArray()) {
             if (symbolMap.containsKey(symbol)) {
@@ -69,7 +74,7 @@ public class Main {
                 maxFrequent = elem.getValue();
             }
         }
-        System.out.println("Самый повторяющийся символ = " + frequentSymbol);
+        System.out.println("Самый повторяющийся символ в слове " + inputWord + " это " + frequentSymbol);
 
 
     }
