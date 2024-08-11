@@ -16,7 +16,8 @@ public class Main {
         System.out.println("+===========+");
 
         System.out.println("Задача 3");
-        BaseConverter.convert();
+        BaseConverter converter = new BaseConverter();
+        converter.convert();
 
         System.out.println("+===========+");
 

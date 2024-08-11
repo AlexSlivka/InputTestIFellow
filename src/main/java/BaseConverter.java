@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class BaseConverter {
-    public static void convert() throws IOException {
+    public void convert() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Введите температуру в градусах Цельсия");
@@ -30,11 +30,11 @@ public class BaseConverter {
         reader.close();
     }
 
-    private static double convertCelsiusToKelvin(double degrees) {
+    private double convertCelsiusToKelvin(double degrees) {
         return degrees + 273.15;
     }
 
-    private static double convertCelsiusToFahrenheit(double degrees) {
+    private double convertCelsiusToFahrenheit(double degrees) {
         return (degrees * 9 / 5) + 32;
     }
 }
