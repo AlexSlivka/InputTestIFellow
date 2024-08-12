@@ -83,9 +83,9 @@ public class Main {
     static void calculateAngleOfTime(int hours, int minutes) {
         double angle;
         if (hours >= 12) {
-            angle = (hours - 12) * 30 + minutes * ((double) 30 / 60) - minutes * 6;
+            angle = Math.abs((hours - 12) * 30 + minutes * ((double) 30 / 60) - minutes * 6);
         } else {
-            angle = hours * 30 + minutes * ((double) 30 / 60) - minutes * 6;
+            angle = Math.abs(hours * 30 + minutes * ((double) 30 / 60) - minutes * 6);
         }
 
         System.out.println("Угол между " + hours + " часами и " + minutes + " минутами = " + angle);
